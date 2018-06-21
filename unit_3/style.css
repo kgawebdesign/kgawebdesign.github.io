@@ -1,4 +1,7 @@
-a{text-decoration: none;}
+a{
+	text-decoration: none;
+	color: black;
+}
 
 img {width: 60%;}
 
