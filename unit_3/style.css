@@ -4,7 +4,7 @@ a{
 }
 
 img {width: 100%;
-	align-self: center;
+	align-items: center;
 }
 
 .phoneicon {width: 2.5%;}
@@ -24,3 +24,5 @@ img {width: 100%;
 	text-align: center;
 
 }
+div{text-align: center;
+align-items: center;}
