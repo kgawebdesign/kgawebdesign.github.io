@@ -3,7 +3,9 @@ a{
 	color: black;
 }
 
-img {width: 60%;}
+img {width: 60%;
+	align-self: center;
+}
 
 .phoneicon {width: 2.5%;}
 
@@ -18,7 +20,7 @@ img {width: 60%;}
 .projcategory{
 	color: black;
 	font-family: Helvetica;
-	font-size: 24px;
+	font-size: 20px;
 	text-align: center;
 
 }
