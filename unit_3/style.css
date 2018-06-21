@@ -1,6 +1,9 @@
 a{
 	text-decoration: none;
 	color: black;
+	font-family: Helvetica;
+	font-size: 20px;
+	text-align: right;
 }
 
 img {width: 100%;
