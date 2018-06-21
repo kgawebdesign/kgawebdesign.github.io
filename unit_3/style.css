@@ -1,4 +1,19 @@
 a{text-decoration: none;}
-img {width: 50%;}
+
+img {width: 60%;}
+
 .icon {width: 5%;}
 
+.projlabel{
+	color: black;
+	font-size:36px;
+	text-align: center;
+}
+
+.projcategory{
+	color: black;
+	font-family: Helvetica;
+	font-size: 24px;
+	text-align: center;
+
+}
