@@ -7,6 +7,9 @@
 	box-sizing: border-box;
 	font-family: 'Muli', sans-serif;
 	letter-spacing: 5px;
+
+	border: 1px black solid;
+    
 }
 
 /* TO DO: CHANGE PADDING AND MARGINS FROM PX TO EM OR % */
@@ -20,27 +23,50 @@ a{
 	letter-spacing: 2px;
 }
 
-div{text-align: center;
+
+/* - header = #FFED74
+- nav = #E8C66A
+- footer = #FF957E
+- div / section = #FFE2B8 
+
+padding: 20px;
+
+*/
+
+
+
+div{/*background-color:#FFE2B8;*/
+	text-align: center;
 	align-items: center;
 	display: inline-block;
 	padding-left: 10px;
 	padding-right: 10px;
 }
 
-/figcaption{
+figure,figcaption{
+	padding: 0;
+}
+
+figure{
+	filter: grayscale(100%);
+}
+
+figure:hover{
+	filter: grayscale(0%);
+}
+
+
+figcaption{
 	color: black;
+	background-color: #D0EBFB;
 }
 
 figcaption:hover{
 	color: tan;
 } 
 
-section{
-	filter: grayscale(100%);
-}
-
-section:hover{
-	filter: grayscale(0%);
+footer{
+	background-color: #FF957E;
 }
 
 h1{
@@ -55,6 +81,10 @@ h2{
 	/* font-family: Helvetica; */
 	font-size: 16px;
 	font-weight: 300;
+}
+
+header{
+	background-color: #FFED74;
 }
 
 header,footer{
@@ -77,6 +107,7 @@ img{width: 100%;
 }*/
 
 nav{
+	background-color: #E8C66A;
 	text-align: right;
 	align-items: right;
 }
@@ -122,12 +153,10 @@ p{
 	font-weight: 300;
 	text-align: center;
 	margin-bottom: 30px;
+	background-color: #A9DCF6;
 
 }
 
-/*.projcategory:hover{
-	color: tan;
-}*/
 
 .projlabel{
 	/*color: black;*/
@@ -137,10 +166,9 @@ p{
 	text-align: center;
 	margin-top: 30px;
 	margin-bottom: 15px;
+	background-color: #6FA6C9;
 }
 
-/*.projlabel:hover{
-	color: tan;
-	}*/
+
 
 

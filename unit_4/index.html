@@ -3,82 +3,80 @@
 <head>
 	<title>Kimberley Smith</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jQuery.js"></script>
 </head>
 <body>
 <header>
 	<section>
 		<h1>Kimberley Smith</h1>
 		<h2>UX AND VISUAL DESIGNER</h2>
-	</section>
-	<nav>
-<a href=“#” class=“nav-link” id=“showInventory”>Inventory</a>
-</nav>
-<!--<nav>
-	<a href="index.html">WORK&nbsp;</a> 
-		<a href="about.html">&nbsp;ABOUT</a>
-</nav>-->
+	</section>	
+	<nav>	
+		<a href="coffee.html" class="nav-link" id="showCoffee" data-title=" - UX and Mobile App Design">The Coffee Connection</a>
+		<a href="#" class="nav-link" id="showInventory" data-title=" - UX and Enterprise Development">Company X ERP</a>
+		<a href="#" class="nav-link" id="showBee" data-title=" - Logo and Label Design">Harry's Honey</a>
+		<a href="#" class="nav-link" id="showPerfume" data-title=" - Packaging Design">Altitude</a>
+		<a href="#" class="nav-link" id="showBook" data-title=" - Book Cover Design">The Beautiful and Damned</a>
+	</nav>
+
 </header>
 
-<section class="background" id="coffee"></section>
+<main>	<!-- added main tag so that jQuery doesn't see nav links as siblings for background images -->
+	<section class="background visible" id="coffee"></section>
 
-<section class="background" id="inventory"></section>
+	<section class="background"  id="inventory"></section>
 
-<section class="background" id="bee"></section>
+	<section class="background" id="bee"></section>
 
-<section class="background" id="perfume"></section>
+	<section class="background" id="perfume"></section>
 
-<section class="background" id="book"></section>
+	<section class="background" id="book"></section>
+
+</main>
 
 
 
 
-<!--<section class="">
-	<a href="">
-		<figure>
-			<img src="images/bee.jpeg" alt="Picture of bee" title="bee">
-		</figure>
-		<figcaption>
-			<h3 class="projlabel">Harry's Honey</h3>
-			<h4 class="projcategory">LOGO AND LABEL DESIGN</h4>
-		</figcaption>
-	</a>
-</section>
-<section>
-	<a href="">
-		<figure>
-			<img src="images/Altitude.jpeg" alt="Picture of London" title="Altitude">
-		</figure>
-		<figcaption>
-			<h3 class="projlabel">Altitude</h3>
-			<h4 class="projcategory">PACKAGING DESIGN</h4>
-		</figcaption>
-	</a>
-</section>
-<section>
-	<a href="">
-		<figure>
-			<img src="images/project image.jpeg" alt="Placeholder" title="Placeholder">
-		</figure>
-		<figcaption>
-			<h3 class="projlabel">The Beautiful and Damned</h3>
-			<h4 class="projcategory">BOOK COVER DESIGN</h4>
-		</figcaption>
-	</a>
-</section>
 
-	
-	<footer>
-		<div>
-			<img src="images/phone.png" alt="iPhone icon" title="iPhone icon" class="iconphone"> 
-			<img src="images/email.png" alt="email icon" title="email icon" class="iconemail">
-			
-		</div>
-		<div>
-			<h2>+44 7759 123456</h2>
-			<h2><a href="mailto:me@emailprovider.com">me@emailprovider.com</a>
-				<nav><a href="#">BACK TO TOP</h2></nav>
-		</div>
-	</footer>
--->
+<script type="text/javascript">
+
+
+	$(document).ready(function(){
+
+	/* code in this function will only run once jQuery detects that the page’s 
+	Document Object Model is ready for JavaScript code to execute */
+
+		console.log("Hello, ready!");	/* write message to console in web inspector for debugging */
+
+		$("#showCoffee").hover(function(){
+			$("#coffee").addClass("visible");					/* show image for coffee project */
+			$("#coffee").siblings().removeClass("visible");	/* hide all other images - see .visible in style.css */
+		});
+
+
+		$("#showInventory").hover(function(){
+			$("#inventory").addClass("visible");
+			$("#inventory").siblings().removeClass("visible");
+		});
+
+		$("#showBee").hover(function(){
+			$("#bee").addClass("visible");
+			$("#bee").siblings().removeClass("visible");
+		});
+
+		$("#showPerfume").hover(function(){
+			$("#perfume").addClass("visible");
+			$("#perfume").siblings().removeClass("visible");
+		});
+
+		$("#showBook").hover(function(){
+			$("#book").addClass("visible");					/* show image for coffee project */
+			$("#book").siblings().removeClass("visible");	/* hide all other images - see .visible in style.css */
+		});
+
+	});
+</script>
+
+
 </body>
 </html>

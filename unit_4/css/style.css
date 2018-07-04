@@ -1,18 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:300,400');
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600');
 
 *{  /* star is css override. put default styles here */
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;		/* responsive design.  works with width & padding but not margin */
-	font-family: 'Muli', sans-serif;
+	font-family: 'Muli', serif;
 	letter-spacing: 5px;
 	color: white;
 }
+
 
 a{
 	text-decoration: none;		/* don't underline anchors */
 	color: white;
 	font-size: 20px;
+	letter-spacing: 2px;
+	font-weight: 600;
+
 }
 
 
@@ -22,26 +26,40 @@ body{
 	position: relative;		/* must set position for stacking to work */
 }
 
-div{
+/*div{
 	text-align: center;
 	align-items: center;
-}
+}*/
 
 h1{
 	font-size:36px;
+	letter-spacing: 3px;
 	padding-top: 20px;
+	font-family: 'Muli', serif;
+	font-weight: 400;
 }
+
+
 
 h2{
-	font-size: 20px;
-	font-weight: normal;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Muli', serif;
 }
 
+h3,h4{z-index:9;}
+
+h5{
+	font-size: 30px;
+	font-weight: 600;
+	color: #434441;
+	letter-spacing: 0px;
+}
 header{
-	margin-left: 40px;
-	margin-right: 40px;
+	/*margin-left: 40px;
+	margin-right: 40px; */
 	position: relative;  /* must set position for stacking to work */
-	z-index: 9;		/* this is stack order.  highest z-index appears on top */
+	z-index: 8;		/* this is stack order.  highest z-index appears on top */
 }
 
 img{width: 100%;
@@ -50,20 +68,61 @@ img{width: 100%;
 }
 
 nav{
-	text-align: right;
-	align-items: right;
-	padding-left: 2px;
+	text-align: left;
+	align-items: center;
+	margin-top: 120px;
+}
+
+p, li{
+	color: #434441;
+	letter-spacing: 0px;
 }
 
 
-
+/*
 .aboutbody {color: black;}
 .abouth3 {color: black;}
 .aboutnava {color: black;}
 
 .iconemail {width: 5%;}
 
-.iconphone {width: 2.5%;}
+.iconphone {width: 2.5%;} */
+
+.nava {
+	/* background-color: pink; */
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+	font-weight: 300;
+	letter-spacing: 5px;
+	color: #434441;
+}
+
+.nava:hover{
+	color:	tan;
+	border: 2px solid tan; 
+}
+
+
+.nav-link{
+	display: block;
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+	/*padding: 20px;*/
+	margin-bottom: 20px;
+	color: rgba(255,255,255,.70);
+}
+
+.nav-link:hover{
+	/*color: #276182;
+	transition: 1.0s color; */
+	color: white;
+    /*text-shadow: 2px 2px #276182;*/
+	
+}
 
 .projcategory{
 	color: white;
@@ -77,9 +136,44 @@ nav{
 	text-align: center;
 }
 
+.protoimg{
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.thumbnail{
+	width: 20%;
+	
+}
+
+/*--- STYLE THE ANCHOR'S TOOLTIP ------*/
+[data-title]:after {
+
+	display: block;
+    opacity: 0;
+    content: attr(data-title);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: white;
+    /*text-shadow: 1px 1px gray;*/
+}
+[data-title]:hover:after {
+	opacity: 1;
+}
+/*
+[data-title] {
+    position: relative;
+    z-index: 99999;
+    opacity: 1;
+
+    
+} */
+
 /*---------------- CODE FROM 1:1 21/0/2018 -------------------------*/
 
-.background{
+.background{	/* background images */
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
@@ -88,23 +182,51 @@ nav{
 	position: absolute;		/* must set position for stacking to work */
 	top: 0;
 	left: 0;
-
+	opacity: 0;		/* for hover event on each navlink. start invisible then jQuery script will implement .visible class */
+	transition: 1.5s opacity;	/* smoother transition from invisible to visible */
+	
 }
+
+
+
+.visible{		/* class will be added by jQuery to specific navlink when hovered over. removed when no longer hovered */
+	opacity: 1;
+	color: white;
+}
+
 #coffee{
 	background-image: url(../images/coffee.jpeg);
 }
 
 #inventory{
-	background-image: url(../images/inventory2.jpeg);
+	background-image: url(../images/inventory.jpeg);
 }
 #bee{
 	background-image: url(../images/bee.jpeg);
 }
 
 #perfume{
-	background-image: url(../images/Altitude.jpeg);
+	background-image: url(../images/AltitudeNoText.jpeg);
 }
 
 #book{
-	background-image: url(../images/projectimage.jpeg);   /* css didn't like space in 'project image' */
+	background-image: url(../images/library.jpeg);   /* css didn't like space in 'project image' */
+
+}
+
+.sticky-nav{
+	margin:0;
+	padding: 10px;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index: 9;
+	text-align: right;
+	align-items: right;
+}
+
+.project-hero{
+	height:220px;
+	overflow: hidden;
 }
