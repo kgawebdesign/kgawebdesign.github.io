@@ -5,6 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;		/* responsive design.  works with width & padding but not margin */
 	font-family: 'Muli', serif;
+	font-weight: 300;
 	letter-spacing: 5px;
 	color: white;
 }
@@ -60,7 +61,7 @@ h3{
 }
 
 h4{
-	font-size: 30px;
+	font-size: 29px;
 	font-weight: 400;
 	margin-bottom: 60px;
 	text-shadow: 2px 2px #46210F;
@@ -184,14 +185,15 @@ li{
 
 
 .nav-link{
-	display: block;
+	display: table;
 	font-size: 50px;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-left: 40px;
 	margin-bottom: 5px;
 	color: rgba(255,255,255,.70);
-	width: 60%;
+	width: max-content;
+	/*background-color: #AFDEF7;*/
 }
 
 .nav-link:hover{
@@ -417,7 +419,7 @@ li{
 
 .centered {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -427,3 +429,9 @@ li{
     overflow: auto;
 }
 
+.bold{
+	font-weight: 600;
+	color: #434441;
+	letter-spacing: 0px;
+	font-size: 20px;
+}
