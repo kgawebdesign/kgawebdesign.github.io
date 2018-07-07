@@ -12,11 +12,16 @@
 
 a{
 	text-decoration: none;		/* don't underline anchors */
-	color: white;
+	color: tan;
 	font-size: 20px;
 	letter-spacing: 2px;
 	font-weight: 600;
 
+}
+
+article{
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 
@@ -34,7 +39,7 @@ body{
 h1{
 	font-size:36px;
 	letter-spacing: 3px;
-	padding-top: 20px;
+	padding-top: 40px;
 	font-family: 'Muli', serif;
 	font-weight: 400;
 }
@@ -47,19 +52,43 @@ h2{
 	font-family: 'Muli', serif;
 }
 
-h3,h4{z-index:9;}
+h3{
+	font-size: 54px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px #46210F;
+}
+
+h4{
+	font-size: 30px;
+	font-weight: 400;
+	margin-bottom: 60px;
+	text-shadow: 2px 2px #46210F;
+	letter-spacing: 2px;
+
+}
 
 h5{
-	font-size: 30px;
+	font-size: 36px;
 	font-weight: 600;
-	color: #434441;
-	letter-spacing: 0px;
+	/*color: #434441;*/
+	color: tan;
+	letter-spacing: 0.5px;
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 40px;
 }
 header{
 	/*margin-left: 40px;
 	margin-right: 40px; */
 	position: relative;  /* must set position for stacking to work */
 	z-index: 8;		/* this is stack order.  highest z-index appears on top */
+}
+hr{
+	width: 75%
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 img{width: 100%;
@@ -70,14 +99,22 @@ img{width: 100%;
 nav{
 	text-align: left;
 	align-items: center;
-	margin-top: 120px;
+	margin-top: 100px;
 }
 
 p, li{
 	color: #434441;
 	letter-spacing: 0px;
+	font-size: 20px;
 }
 
+ul{
+	list-style-position: inside;
+}
+
+li{
+	list-style-image: url("../images/tancup.png");
+}
 
 /*
 .aboutbody {color: black;}
@@ -88,8 +125,50 @@ p, li{
 
 .iconphone {width: 2.5%;} */
 
+
+.description
+{
+	/*display: inline-block;*/
+}
+.kim-logo{
+	margin-left: 40px;
+}
+
 .nava {
-	/* background-color: pink; */
+	/*background-color: pink; */
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+	font-weight: 400;
+	letter-spacing: 5px;
+	color: #434441;
+	text-align: right;
+	/*align-items: right;*/
+}
+
+.nava:hover, .nava-home:hover, .nava-white:hover{
+	color:	tan;
+	border: 2px solid tan; 
+}
+
+.nava-home {
+	/*background-color: pink; */
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+	font-weight: 400;
+	letter-spacing: 5px;
+	color: white;
+	text-align: right;
+	/*align-items: right;*/
+}
+
+.nava-white {
+	/*background-color: pink; */
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 5px;
@@ -97,12 +176,10 @@ p, li{
 	margin-bottom: 30px;
 	font-weight: 300;
 	letter-spacing: 5px;
-	color: #434441;
-}
-
-.nava:hover{
-	color:	tan;
-	border: 2px solid tan; 
+	color:	white;
+	border: 2px solid white; 
+	text-align: right;
+	align-items: right;
 }
 
 
@@ -111,9 +188,10 @@ p, li{
 	font-size: 50px;
 	font-weight: 700;
 	text-transform: uppercase;
-	/*padding: 20px;*/
-	margin-bottom: 20px;
+	margin-left: 40px;
+	margin-bottom: 5px;
 	color: rgba(255,255,255,.70);
+	width: 60%;
 }
 
 .nav-link:hover{
@@ -137,16 +215,44 @@ p, li{
 }
 
 .protoimg{
-	width: 30%;
-	margin-left: auto;
-	margin-right: auto;
+	width: 25%;
+	margin-left: 40px;
+	margin-right: 60px;
+	float: left;
+}
+
+
+.summary{
+	
+	width: 80%;
+
+	/*padding-top: 80px;
+	*/
+	font-size: 20px;
+	margin-right: 80px;
+	vertical-align: middle;
 }
 
 .thumbnail{
-	width: 20%;
+	height: 10%;
+	width:23.5%;
 	
 }
+.white-border{
+	color:	white;
+	border: 2px solid white; 
+}
 
+.wireframe
+{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	/*border: 0.1px solid #434441;*/
+	border: 0.1px solid tan;
+	margin-top: 20px;
+}
 /*--- STYLE THE ANCHOR'S TOOLTIP ------*/
 [data-title]:after {
 
@@ -183,7 +289,7 @@ p, li{
 	top: 0;
 	left: 0;
 	opacity: 0;		/* for hover event on each navlink. start invisible then jQuery script will implement .visible class */
-	transition: 1.5s opacity;	/* smoother transition from invisible to visible */
+	transition: 0.5s opacity;	/* smoother transition from invisible to visible */
 	
 }
 
@@ -214,6 +320,65 @@ p, li{
 
 }
 
+#thumbnails{
+	/*clear: both;*/
+	/*padding-top:20px;*/
+	width: 40%;
+	margin-left: auto;
+    margin-right: auto;
+    
+} 
+
+#thumbnails:hover{
+	border: 2px solid tan; 
+}
+
+#interviews
+{
+	width: 30%;
+	float: left;
+	margin-left: 40px;
+	margin-right: 40px;
+	display: block;
+
+}
+
+#storyboard
+{
+	width: 40%;
+	float: right;
+	margin-left: 40px;
+	margin-right: 40px;
+	display: block;
+}
+
+#plusdelta
+{
+	width: 30%;
+	float: right;
+	margin-left: 40px;
+	margin-right: 40px;
+	display: block;
+}
+
+#paper
+{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.footer-nav{
+	margin:0;
+	padding: 10px;
+	width:100%;
+	z-index: 9;
+	text-align: right;
+	align-items: right;
+}
+
 .sticky-nav{
 	margin:0;
 	padding: 10px;
@@ -226,7 +391,39 @@ p, li{
 	align-items: right;
 }
 
+.project-front{
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;		/* whole screen */
+	background-position: center center;
+	position: absolute;		/* must set position for stacking to work */
+	top: 0;
+	left: 0;
+	z-index:1;
+}
+
 .project-hero{
 	height:220px;
 	overflow: hidden;
+
 }
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.clearfix {
+    overflow: auto;
+}
+
