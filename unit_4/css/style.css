@@ -57,14 +57,14 @@ h3{
 	font-size: 54px;
 	font-weight: 700;
 	margin-bottom: 20px;
-	text-shadow: 2px 2px #46210F;
+	/*text-shadow: 2px 2px #46210F;*/
 }
 
 h4{
-	font-size: 26px;
-	font-weight: 600;
+	font-size: 24px;
+	font-weight: 400;
 	margin-bottom: 60px;
-	text-shadow: 1px 1px #46210F;
+	/*text-shadow: 1px 1px #46210F;*/
 	letter-spacing: 2px;
 
 }
@@ -334,7 +334,7 @@ li{
 }
 
 #coffee{
-	background-image: url(../images/coffee.jpeg);
+	background-image: url(../images/coffee-girl-tint.jpeg);
 }
 
 #inventory{
