@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600');
+
+*{  /* star is css override. put default styles here */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;		/* responsive design.  works with width & padding but not margin */
+	font-family: 'Muli', serif;
+	font-weight: 300;
+	letter-spacing: 5px;
+	color: white;
+}
+
+
+a{
+	text-decoration: none;		/* don't underline anchors */
+	color: tan;
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-weight: 600;
+
+}
+
+article{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+
+body{
+	width: 100%;
+	min-height: 100vh;
+	position: relative;		/* must set position for stacking to work */
+}
+
+/*div{
+	text-align: center;
+	align-items: center;
+}*/
+
+h1{
+	font-size:36px;
+	letter-spacing: 3px;
+	padding-top: 40px;
+	font-family: 'Muli', serif;
+	font-weight: 400;
+}
+
+
+
+h2{
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Muli', serif;
+}
+
+h3{
+	font-size: 54px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	/*text-shadow: 2px 2px #46210F;*/
+}
+
+h4{
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 60px;
+	/*text-shadow: 1px 1px #46210F;*/
+	letter-spacing: 2px;
+
+}
+
+h5{
+	font-size: 36px;
+	font-weight: 600;
+	/*color: #434441;*/
+	color: tan;
+	letter-spacing: 0.5px;
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+header{
+	/*margin-left: 40px;
+	margin-right: 40px; */
+	position: relative;  /* must set position for stacking to work */
+	z-index: 8;		/* this is stack order.  highest z-index appears on top */
+}
+/*
+hr{
+	width: 75%
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+*/
+
+img{width: 100%; 
+	height:100%;
+	/*align-items: center;*/
+	margin: 0;
+}
+
+nav{
+	text-align: left;
+	align-items: center;
+	margin-top: 100px;
+}
+
+p, li{
+	color: #434441;
+	letter-spacing: 0px;
+	font-size: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+ul{
+	list-style-position: inside;
+}
+
+li{
+	list-style-image: url("../images/tancup.png");
+}
+
+/*
+.aboutbody {color: black;}
+.abouth3 {color: black;}
+.aboutnava {color: black;}
+
+.iconemail {width: 5%;}
+
+.iconphone {width: 2.5%;} */
+
+
+.description
+{
+	/*display: inline-block;*/
+}
+.kim-logo{
+	margin-left: 40px;
+}
+
+.nava {
+	/*background-color: pink; */
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-bottom: 30px;
+	font-weight: 400;
+	letter-spacing: 5px;
+	color: #434441;
+	border: 2px solid transparent;
+	text-align: right;
+	/*align-items: right;*/
+}
+
+.nava:hover, .nava-home:hover, .nava-tan:hover, .nava-turquoise:hover, .nava-white:hover{
+	color:	tan;
+	border: 2px solid tan; 
+}
+
+.nava-home {
+	/*background-color: pink; */
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+	font-weight: 400;
+	letter-spacing: 5px;
+	color: white;
+	border: 2px solid transparent;
+	text-align: right;
+	/*align-items: right;*/
+}
+
+.nava-white {
+	/*background-color: pink; */
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+	font-weight: 400;
+	letter-spacing: 5px;
+	color:	white;
+	border: 2px solid white; 
+	text-align: right;
+	align-items: right;
+}
+
+.nava-turquoise {
+	/*background-color: pink; */
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-bottom: 30px;
+	font-weight: 300;
+	letter-spacing: 5px;
+	color: #276182;
+	border: 2px solid transparent;
+	text-align: right;
+	align-items: right;
+}
+
+
+.nava-tan {
+	/*background-color: pink; */
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-bottom: 30px;
+	font-weight: 300;
+	letter-spacing: 5px;
+	color: tan;
+	border: 2px solid transparent;
+	text-align: right;
+	align-items: right;
+}
+
+.nav-link{
+	display: table;
+	font-size: 40px;
+	/*font-size: 50px;*/
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-left: 40px;
+	margin-bottom: 5px;
+	color: rgba(255,255,255,.70);
+	width: max-content;
+	/*background-color: #AFDEF7;*/
+}
+
+.nav-link:hover{
+	/*color: #276182;
+	transition: 1.0s color; */
+	color: white;
+    /*text-shadow: 2px 2px #276182;*/
+	
+}
+
+.projcategory{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+
+.projlabel{
+	color: white;
+	font-size:36px;
+	text-align: center;
+}
+
+.protoimg{
+	width: 25%;
+	margin-left: 40px;
+	margin-right: 60px;
+	float: left;
+}
+
+
+.summary{
+	
+	width: 80%;
+
+	/*padding-top: 80px;
+	*/
+	font-size: 20px;
+	margin-right: 80px;
+	vertical-align: middle;
+}
+
+.thumbnail{
+	height: 10%;
+	width:23.5%;
+	
+}
+.white-border{
+	color:	white;
+	border: 2px solid white; 
+}
+
+.wireframe
+{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	/*border: 0.1px solid #434441;*/
+	/*border: 0.1px solid tan;*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-top: 20px;
+}
+/*--- STYLE THE ANCHOR'S TOOLTIP ------*/
+[data-title]:after {
+
+	display: block;
+    opacity: 0;
+    content: attr(data-title);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: white;
+    /*text-shadow: 1px 1px gray;*/
+}
+[data-title]:hover:after {
+	opacity: 1;
+}
+/*
+[data-title] {
+    position: relative;
+    z-index: 99999;
+    opacity: 1;
+
+    
+} */
+
+/*---------------- CODE FROM 1:1 21/0/2018 -------------------------*/
+
+.background{	/* background images */
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;		/* whole screen */
+	background-position: center center;
+	position: absolute;		/* must set position for stacking to work */
+	top: 0;
+	left: 0;
+	opacity: 0;		/* for hover event on each navlink. start invisible then jQuery script will implement .visible class */
+	transition: 0.5s opacity;	/* smoother transition from invisible to visible */
+	
+}
+
+
+
+.visible{		/* class will be added by jQuery to specific navlink when hovered over. removed when no longer hovered */
+	opacity: 1;
+	color: white;
+}
+
+#coffee{
+	background-image: url(../images/coffee-girl-tint.jpeg);
+}
+
+#inventory{
+	background-image: url(../images/inventory.jpeg);
+}
+#bee{
+	background-image: url(../images/lavender.jpeg);
+}
+
+#perfume{
+	background-image: url(../images/AltitudeNoText.jpeg);
+}
+
+#book{
+	background-image: url(../images/library.jpeg);   /* css didn't like space in 'project image' */
+
+}
+
+#thumbnails{
+	/*clear: both;*/
+	/*padding-top:20px;*/
+	width: 40%;
+	margin-left: auto;
+    margin-right: auto;
+    
+} 
+
+#thumbnails:hover{
+	border: 2px solid tan; 
+}
+
+#interviews
+{
+	width: 30%;
+	float: left;
+	margin-left: 40px;
+	margin-right: 40px;
+	display: block;
+
+}
+
+#storyboard
+{
+	width: 40%;
+	float: right;
+	margin-left: 40px;
+	margin-right: 40px;
+	display: block;
+}
+
+#plusdelta
+{
+	width: 30%;
+	float: right;
+	margin-left: 40px;
+	margin-right: 40px;
+	display: block;
+}
+
+#paper
+{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.footer-nav{
+	margin:0;
+	padding: 10px;
+	width:100%;
+	z-index: 9;
+	text-align: right;
+	align-items: right;
+}
+
+.sticky-nav{
+	margin:0;
+	padding: 45px;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index: 9;
+	text-align: right;
+	align-items: right;
+}
+
+.project-front{
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;		/* whole screen */
+	background-position: center center;
+	position: absolute;		/* must set position for stacking to work */
+	top: 0;
+	left: 0;
+	z-index:1;
+}
+
+.project-hero{
+	/*height:220px;
+	overflow: hidden; This was for a slice of the picture at the top of the page */
+	top: 0;
+	left: 0;
+	
+}
+
+
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sameline{
+	display: inline;
+}
+.clearfix {
+    overflow: auto;
+}
+
+.bold{
+	font-weight: 600;
+	color: #434441;
+	letter-spacing: 0px;
+	font-size: 20px;
+}
+.separator{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;
+    /*margin-bottom: 90px;*/
+    /*padding-bottom: 50px;*/
+    border-bottom: 1px solid tan;
+}
+/* 16/7/2018 put kimlogo and nav on same line */
+#two_column {
+    background-color: #FFB7CF;
+    border: 1px black solid;
+    padding: 20px;
+}
+#left {
+    background-color: violet;
+    border: 1px black solid;
+    padding: 20px;
+    float: left;
+    width: 30%;
+}
+
+#right {
+    background-color: pink;
+    border: 1px black solid;
+    padding: 20px;
+    float: right;   
+    width: 62%;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}

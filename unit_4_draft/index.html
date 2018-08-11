@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kimberley Smith</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jQuery.js"></script>
+</head>
+<body>
+<header>
+	
+	<section>
+		<h1 class="kim-logo">Kimberley Smith</h1>
+		<h2 class="kim-logo">UX AND VISUAL DESIGNER</h2>
+	</section>	
+
+
+
+	<nav class="sticky-nav">	
+	
+		<a href="index.html" class="nava-home">WORK</a>
+		<a href="about.html" class="nava-home">ABOUT</a>
+	</nav>	
+
+	<nav>	
+		<a href="coffee.html" class="nav-link" id="showCoffee" data-title="UX and Mobile App Design">The Coffee Connection</a>
+		<a href="erp.html" class="nav-link" id="showInventory" data-title="UX and Enterprise Development">Company X ERP</a>
+		<a href="bee.html" class="nav-link" id="showBee" data-title="Logo and Label Design">Harry's Honey</a>
+		<a href="altitude.html" class="nav-link" id="showPerfume" data-title="Packaging Design">Altitude</a>
+		<a href="book.html" class="nav-link" id="showBook" data-title="Book Cover Design">The Beautiful and Damned</a>
+	</nav>
+
+</header>
+
+<main>	<!-- added main tag so that jQuery doesn't see nav links as siblings for background images -->
+	<section class="background visible" id="coffee"></section>
+
+	<section class="background"  id="inventory"></section>
+
+	<section class="background" id="bee"></section>
+
+	<section class="background" id="perfume"></section>
+
+	<section class="background" id="book"></section>
+
+</main>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	$(document).ready(function(){
+
+	/* code in this function will only run once jQuery detects that the page’s 
+	Document Object Model is ready for JavaScript code to execute */
+
+		console.log("Hello, ready!");	/* write message to console in web inspector for debugging */
+
+		$("#showCoffee").hover(function(){
+			$("#coffee").addClass("visible");					/* show image for coffee project */
+			$("#coffee").siblings().removeClass("visible");	/* hide all other images - see .visible in style.css */
+		});
+
+
+		$("#showInventory").hover(function(){
+			$("#inventory").addClass("visible");
+			$("#inventory").siblings().removeClass("visible");
+		});
+
+		$("#showBee").hover(function(){
+			$("#bee").addClass("visible");
+			$("#bee").siblings().removeClass("visible");
+		});
+
+		$("#showPerfume").hover(function(){
+			$("#perfume").addClass("visible");
+			$("#perfume").siblings().removeClass("visible");
+		});
+
+		$("#showBook").hover(function(){
+			$("#book").addClass("visible");					/* show image for coffee project */
+			$("#book").siblings().removeClass("visible");	/* hide all other images - see .visible in style.css */
+		});
+
+	});
+</script>
+
+
+</body>
+</html>
