@@ -225,7 +225,7 @@ img {
 	font-size: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
-	margin-bottom: 20px;
+	margin-bottom: .6666em;
 	color: rgba(255,255,255,.70);
 	transition: color 0.25s;
 }
@@ -404,6 +404,9 @@ margin-bottom: 1em;}
 {width: 35%;
 margin: auto;
 margin-top: 1em}
+/* TRYING OUT RESPONSIVE 12/8/18 */
+#mobile
+{display: none;}
 
 /*---------------- CODE FROM 1:1 21/0/2018 -------------------------*/
 
@@ -564,4 +567,21 @@ margin-top: 1em}
     content: " ";
     clear: both;
     height: 0;
+}
+@media only screen and (max-width: 690px) {
+	#mobile
+	{display: block;}
+	
+	.header-nav-link
+	{display: none;}
+	.header-nav:hover .header-nav-link
+	{display: block;}
+	.background-nav-link 
+	{font-size: 25px;}
+}
+@media only screen and (max-width: 450px) {
+	.background-nav-link 
+	{font-size: 20px;}
+	.background-nav-link:after
+	{font-size: 12px;}
 }
